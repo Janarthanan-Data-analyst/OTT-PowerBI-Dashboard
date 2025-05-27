@@ -2,10 +2,15 @@
 
 This project presents a business-focused Power BI dashboard built on OTT (Netflix-like) user data, highlighting churn behavior, revenue distribution, and user demographics.
 
-## 📁 Files Included
-- `OTT_Analysis_Dashboard.pbix`: The complete Power BI file
-- `dashboard_overview.png`: Screenshot of the dashboard
--'OTT_Analysis_SQL.sql': The complete SQL querries
+
+## 📂 Project Files
+
+| File                            | Description                                      |
+|----------------------------------|--------------------------------------------------|
+| `OTT_Analysis_Dashboard.pbix`     | Power BI dashboard file                          |
+| `OTT_Analysis_SQL.sql`            | SQL scripts for cleaning and transformation      |
+| `dashboard_overview.png`        | Screenshot of full dashboard                     |
+| `README.md`                     | Documentation (this file)                        |
 
 ## 📊 Key Insights
 - Churn rate by subscription type
