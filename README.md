@@ -5,7 +5,7 @@ This project presents a business-focused Power BI dashboard built on OTT (Netfli
 ## 📁 Files Included
 - `OTT_Analysis_Dashboard.pbix`: The complete Power BI file
 - `dashboard_overview.png`: Screenshot of the dashboard
-- `churn_analysis.png`: Visual showing churn metrics
+-'OTT_Analysis_SQL.sql': The complete SQL querries
 
 ## 📊 Key Insights
 - Churn rate by subscription type
@@ -18,7 +18,21 @@ This project presents a business-focused Power BI dashboard built on OTT (Netfli
 - **SQL (Oracle 11g)**: For data cleaning and churn flag generation
 - **Power BI**: For visualization and DAX calculations
 - **DAX**: Used for Age grouping, Churn categorization, Revenue measures
+## 🔍 SQL Work Highlights
 
+This is **not just a Power BI project** — this is a **SQL-centric analytics solution**. All cleaning and logic were handled in Oracle SQL before visualization.
+
+### ✅ SQL Tasks Performed
+
+- ✅ Cleaned inconsistent `gender`, `age`, and `revenue` values
+- ✅ Handled missing or invalid `last_payment_date` formats
+- ✅ Created **churn flag** using payment recency logic:
+  ```sql
+  CASE 
+    WHEN SYSDATE - last_payment_date > 30 THEN 'Yes'
+    ELSE 'No'
+  END AS churn_flag
+  
 ## 📌 Summary
 This dashboard allows business users to identify user trends, churn risks, and revenue loss areas in order to make informed strategic decisions.
 
